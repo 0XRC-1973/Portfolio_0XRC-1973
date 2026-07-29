@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rimish Chandra Srivastava | Software Engineer & Full Stack Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white hover:text-brand-500 transition">
+                RCS<span class="text-brand-500">.</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-brand-500 transition">About</a>
+                <a href="#skills" class="hover:text-brand-500 transition">Skills</a>
+                <a href="#experience" class="hover:text-brand-500 transition">Experience</a>
+                <a href="#projects" class="hover:text-brand-500 transition">Projects</a>
+                <a href="#education" class="hover:text-brand-500 transition">Education</a>
+                <a href="#contact" class="hover:text-brand-500 transition">Contact</a>
+            </div>
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 flex flex-col space-y-4 text-sm font-medium text-slate-300">
+            <a href="#about" class="mobile-link hover:text-brand-500">About</a>
+            <a href="#skills" class="mobile-link hover:text-brand-500">Skills</a>
+            <a href="#experience" class="mobile-link hover:text-brand-500">Experience</a>
+            <a href="#projects" class="mobile-link hover:text-brand-500">Projects</a>
+            <a href="#education" class="mobile-link hover:text-brand-500">Education</a>
+            <a href="#contact" class="mobile-link hover:text-brand-500">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero / Header Section -->
+    <section id="about" class="min-h-screen pt-32 pb-20 flex items-center justify-center relative">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-brand-500 bg-brand-500/10 rounded-full uppercase border border-brand-500/20">
+                Software Engineer & Full Stack Developer
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6">
+                Rimish Chandra Srivastava
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Building scalable web applications, RESTful APIs, and Machine Learning pipelines. Experienced in end-to-end SDLC, data preprocessing, and modern DevOps tools.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-medium rounded-lg transition shadow-lg shadow-brand-500/25 flex items-center gap-2">
+                    View Projects <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#contact" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium rounded-lg border border-slate-700 transition flex items-center gap-2">
+                    Contact Me
+                </a>
+            </div>
+            <!-- Social Icons -->
+            <div class="mt-12 flex justify-center space-x-6 text-slate-400">
+                <a href="https://github.com/0XRC-1973" target="_blank" rel="noopener noreferrer" class="hover:text-brand-500 transition" title="GitHub">
+                    <i data-lucide="github" class="w-6 h-6"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rimish-chandra-srivastava-a9a797343/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-500 transition" title="LinkedIn">
+                    <i data-lucide="linkedin" class="w-6 h-6"></i>
+                </a>
+                <a href="mailto:rimishsrivastava3@gmail.com" class="hover:text-brand-500 transition" title="Email">
+                    <i data-lucide="mail" class="w-6 h-6"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="py-20 border-t border-slate-800/80 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-3">
+                <i data-lucide="code" class="text-brand-500"></i> Technical Skills
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Skill Category Card -->
+                <div class="p-6 rounded-xl bg-slate-800/50 border border-slate-700/50">
+                    <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                        <i data-lucide="terminal" class="w-5 h-5 text-brand-500"></i> Languages
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">Python</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">JavaScript (ES6+)</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">SQL</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">HTML5</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">CSS3</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category Card -->
+                <div class="p-6 rounded-xl bg-slate-800/50 border border-slate-700/50">
+                    <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                        <i data-lucide="layers" class="w-5 h-5 text-brand-500"></i> Frameworks & Libraries
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">React.js</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">Node.js</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">Express.js</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">Streamlit</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">Scikit-learn</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">Pandas</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">NumPy</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">NLTK</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category Card -->
+                <div class="p-6 rounded-xl bg-slate-800/50 border border-slate-700/50">
+                    <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                        <i data-lucide="database" class="w-5 h-5 text-brand-500"></i> Databases & Cloud
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">MySQL</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category Card -->
+                <div class="p-6 rounded-xl bg-slate-800/50 border border-slate-700/50">
+                    <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                        <i data-lucide="wrench" class="w-5 h-5 text-brand-500"></i> Developer Tools
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">Git</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">GitHub</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">Docker</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">VS Code</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category Card -->
+                <div class="p-6 rounded-xl bg-slate-800/50 border border-slate-700/50 md:col-span-2 lg:col-span-2">
+                    <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                        <i data-lucide="cpu" class="w-5 h-5 text-brand-500"></i> Core Concepts
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">Data Structures & Algorithms (DSA)</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">Object-Oriented Programming (OOP)</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">RESTful APIs</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">SDLC</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">Feature Engineering</span>
+                        <span class="px-3 py-1 bg-slate-900 text-slate-300 text-sm rounded-md border border-slate-700">EDA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience" class="py-20 border-t border-slate-800/80">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-3">
+                <i data-lucide="briefcase" class="text-brand-500"></i> Work Experience
+            </h2>
+            <div class="space-y-12 relative before:absolute before:inset-0 before:left-3 before:w-0.5 before:bg-slate-800">
+                
+                <!-- Experience Item 1 -->
+                <div class="relative pl-10">
+                    <div class="absolute left-0 top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-brand-500 flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-brand-500"></div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">AI Engineer Intern</h3>
+                        <span class="text-sm font-medium text-brand-500 bg-brand-500/10 px-3 py-1 rounded-full border border-brand-500/20 w-fit">Jun 2026 – Nov 2026</span>
+                    </div>
+                    <p class="text-slate-400 font-medium mb-4">VSS Pvt. Ltd. • Delhi, India</p>
+                    <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm leading-relaxed">
+                        <li>Executed data preprocessing, cleaning, and feature scaling on multi-structured datasets, optimizing data input quality for AI models.</li>
+                        <li>Validated ML models using Precision, Recall, and F1-Score metrics to ensure high system reliability and performance.</li>
+                        <li>Authored comprehensive technical documentation and system logs to streamline developer handoffs and production deployments.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="relative pl-10">
+                    <div class="absolute left-0 top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-slate-700 flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-slate-700"></div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Machine Learning Developer Intern</h3>
+                        <span class="text-sm font-medium text-slate-400 bg-slate-800 px-3 py-1 rounded-full border border-slate-700 w-fit">Jul 2026 – Aug 2026</span>
+                    </div>
+                    <p class="text-slate-400 font-medium mb-4">Code Alpha • Delhi, India</p>
+                    <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm leading-relaxed">
+                        <li>Developed, trained, and evaluated machine learning models using Python and Scikit-learn across diverse datasets.</li>
+                        <li>Applied Exploratory Data Analysis (EDA) and feature engineering techniques to optimize hyperparameter tuning and accuracy.</li>
+                        <li>Contributed to end-to-end ML workflows, including automated data ingestion, testing, and latency optimization.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 border-t border-slate-800/80 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-3">
+                <i data-lucide="folder-git-2" class="text-brand-500"></i> Featured Projects
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="bg-slate-800/40 rounded-xl p-6 border border-slate-700/60 flex flex-col justify-between hover:border-slate-600 transition">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white">AI-Powered Spam Detector</h3>
+                            <a href="https://github.com/0XRC-1973/Spam_Detector" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            Built an automated text classification system for real-time SMS and email spam detection. Engineered an NLP pipeline leveraging NLTK text preprocessing and TF-IDF vectorization. Achieved 97% accuracy using Multinomial Naive Bayes algorithm.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-brand-500 border border-brand-500/30">Python</span>
+                            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-brand-500 border border-brand-500/30">Streamlit</span>
+                            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-brand-500 border border-brand-500/30">Scikit-learn</span>
+                            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-brand-500 border border-brand-500/30">NLTK</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/0XRC-1973/Spam_Detector" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-500 hover:underline flex items-center gap-1">
+                        View Source Code <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-slate-800/40 rounded-xl p-6 border border-slate-700/60 flex flex-col justify-between hover:border-slate-600 transition">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white">AtmosX – Weather Forecast Web App</h3>
+                            <a href="https://0xrc-1973.github.io/AtmosX/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            Developed a responsive weather app delivering real-time metrics (temperature, humidity, wind) via OpenWeather API. Designed an intuitive dynamic search interface optimized for fast load times and cross-device responsiveness.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-brand-500 border border-brand-500/30">JavaScript</span>
+                            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-brand-500 border border-brand-500/30">HTML5</span>
+                            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-brand-500 border border-brand-500/30">CSS3</span>
+                            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-brand-500 border border-brand-500/30">OpenWeather API</span>
+                        </div>
+                    </div>
+                    <a href="https://0xrc-1973.github.io/AtmosX/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-500 hover:underline flex items-center gap-1">
+                        View Live Project <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="py-20 border-t border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <!-- Education -->
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+                    <i data-lucide="graduation-cap" class="text-brand-500"></i> Education
+                </h2>
+                <div class="bg-slate-800/30 border border-slate-700/50 rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-white">B.Tech in Computer Science Engineering</h3>
+                    <p class="text-slate-400 text-sm">Accurate Institute of Management & Technology</p>
+                    <p class="text-slate-500 text-xs mt-1">Greater Noida, India • 2023 – 2027</p>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+                    <i data-lucide="award" class="text-brand-500"></i> Certifications
+                </h2>
+                <ul class="space-y-4">
+                    <li class="bg-slate-800/30 border border-slate-700/50 rounded-xl p-4 flex items-center justify-between">
+                        <span class="text-slate-200 font-medium text-sm">Full Stack Python Development</span>
+                        <span class="text-xs text-slate-400 bg-slate-800 px-2 py-1 rounded">Udemy</span>
+                    </li>
+                    <li class="bg-slate-800/30 border border-slate-700/50 rounded-xl p-4 flex items-center justify-between">
+                        <span class="text-slate-200 font-medium text-sm">Mastering Deep Learning for Generative AI</span>
+                        <span class="text-xs text-slate-400 bg-slate-800 px-2 py-1 rounded">Udemy</span>
+                    </li>
+                    <li class="bg-slate-800/30 border border-slate-700/50 rounded-xl p-4 flex items-center justify-between">
+                        <span class="text-slate-200 font-medium text-sm">SQL for Everyone: Transform Data into Insight</span>
+                        <span class="text-xs text-slate-400 bg-slate-800 px-2 py-1 rounded">Udemy</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 border-t border-slate-800/80 bg-slate-900/50">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Get In Touch</h2>
+            <p class="text-slate-400 max-w-lg mx-auto mb-8 text-sm">
+                I am currently looking for software engineering and full-stack development opportunities. Whether you have a question or just want to connect, feel free to reach out!
+            </p>
+            <div class="inline-flex flex-col sm:flex-row gap-4 items-center justify-center">
+                <a href="mailto:rimishsrivastava3@gmail.com" class="px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-medium rounded-lg transition flex items-center gap-2">
+                    <i data-lucide="mail" class="w-4 h-4"></i> Say Hello
+                </a>
+                <a href="tel:+918810667945" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium rounded-lg border border-slate-700 transition flex items-center gap-2">
+                    <i data-lucide="phone" class="w-4 h-4"></i> +91-8810667945
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-xs text-slate-500">
+        <p>© 2026 Rimish Chandra Srivastava. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Render Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
